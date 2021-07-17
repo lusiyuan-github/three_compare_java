@@ -1,0 +1,19 @@
+package test1;
+import java.util.Scanner;
+public class t4 {
+	public static void main(String[] args) {
+		Scanner a = new Scanner(System.in);
+		int a1=0,b1=0,c1=0;
+		System.out.print("输入第一个整数：");
+		a1 = a.nextInt();
+		System.out.print("输入第二个整数：");
+		b1 = a.nextInt();
+		System.out.print("输入第三个整数：");	
+		c1 = a.nextInt();
+		System.out.printf("%d %d %d",
+				c1>(a1>b1?a1:b1)?c1:(a1>b1?a1:b1),
+				c1==(c1>(a1>b1?a1:b1)?c1:(a1>b1?a1:b1))?(b1>a1?b1:a1):
+			    (c1==(c1<(a1<b1?a1:b1)?c1:(a1<b1?a1:b1))?(b1>a1?a1:b1):c1),
+				c1<(a1<b1?a1:b1)?c1:(a1<b1?a1:b1));
+	}
+}
